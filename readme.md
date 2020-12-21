@@ -7,8 +7,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
+|Day 1| Project Description | Complete
+|Day 1| Wireframes / Priority Matrix / Timeline | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches | Incomplete
@@ -16,7 +16,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+For my project for unit one I want to make my portfolio site a minimalistic representation of the work I do. One of the key things I want to emphasize is concise design. After looking at a lot of  other portfolios I notice that they are all well designed and sectioned off but the sections run down the page and you essentially end up with a long list of things that don't always run well together. I want the relative content to be the focus of the viewer at any given time. I want to showcase my ability to learn and incorporate new plugins, libraries, and frameworks in HTML and javascript. I also want to use this project to display some of my design capability and make the website as intuitive to navigate as I think other sites should be.
 
 ## Google Sheet
 
