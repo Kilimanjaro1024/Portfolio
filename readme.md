@@ -20,7 +20,8 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## Google Sheet
 
-Include link to your google sheet here.  Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/edit#gid=0) 
+
+[Projects](https://docs.google.com/spreadsheets/d/1DkknLv1ELt5dx7KR4AbO1W1O-aIsQrI53AaXJ9KUTXI/edit#gid=0) 
 
 ## Portfolio I want to Emulate
 
@@ -28,27 +29,22 @@ Search and compare at least 3 profile web sites.  Record your findings in the ta
 
 Link To Site  | One Thing I'd Like To Incorporate | 
 | ------------- | ------------- |
-| [denisechandler.com](http://www.denisechandler.com/)%7C landing page animation
-|[jkeohan.com](http://jkeohan.com/) | mouseover on a project triggers animations |
-| [mattfarley.ca](http://mattfarley.ca/) |  layout of the projects
+| [robertdiscipio.surge.sh](http://robertdiscipio.surge.sh/) | Splash image layout
+|[lianapenn.com](https://www.lianapenn.com/) | Interactive background image, and skills layout presentation |
+| [dribbble.com](https://dribbble.com/shots/5048198/attachments/5048198-Web-slider-interaction?mode=media) |  General layout of carousel element
 ---
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page. 
 
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg)
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg)
-Wireframing Resources:
-- [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
+- [Mobile](https://imgur.com/a/swFvx3S)
+- [Desktop](https://imgur.com/a/bk62V0M)
+
 
 ## Time/Priority Matrix
 
-[Link](https://res.cloudinary.com/jkeohan/image/upload/a_270/v1591621734/project1_matrix_ocy5gc_h1kg0m.jpg)
-Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
-Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
-Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
-Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
+[Link](https://imgur.com/t1s9O2z)
+
 
 ### MVP/PostMVP - 5min
 
@@ -56,45 +52,55 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP (examples)
 
-- Pull data using google json api
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+- HTML Structure
+- Hamburger 
+- Nav
+- Responsive
+- Contact Form
+- Home Div
+- Skills Div
+- Projects Div
+- Social Media Icons
 
 #### PostMVP 
 
-- Anything else that is not MVP
+- Project Hover (expandable Blurb)
+- Projects Carousel
+- Embed Videos
+- Interactive Background Image
+- Bootstrap
+- Make Logo
 
 ## Functional Components
 
-Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
+
 
 #### MVP
 
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | 
-| Hamburger | H | 1hr | hr |
-| Project Previews | H | 3hr | hr |
-| Regular Nav | H | 1hr | hr |  
-| Adding Form | H | 1.5hr|  hr | 
-| Other sections and flex| M | 3hr | hr|
-| Working with API | H | 3hrs|  hr | 
-| Responsive | H | 3hr | hr | hr |
-| Social Media Icons | L | 1hr |  hr |
-| Total | H | 15.5hrs| hrs |
+| --- | :---: |  :---: | :---: |
+| HTML Structure | H | 1.5hr | hr | 
+| Hamburger | L | 1hr | hr |
+| Nav | H | 1.5hr | hr |
+| Responsive | M | 2hr | hr |  
+| Contact Form | M | 2.5hr|  hr | 
+| Home Div| H | 3hr | hr|
+| Skills Div | H | 3hr |  hr | 
+| Projects Div | H | 3hr | hr | hr |
+| Social Media Icons | L | 2hr |  hr |
+| Total | H | 19.5hrs| hrs |
 
 #### PostMVP
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Project Hover | L | 3hr | -hr | hr |
-| Banner letters wiggle | L | 1hr | hr |
-| Interactive Banner | M | 4hr | hr |
-| Materialize | H | 4hr | -hr | hr |
-| Bootstrap | H | 4hr | hr |
-| Make own icon | L | 4hr | hr |
-| Total | H | 20hrs| hrs |
+| Project Hover (expandable Blurb) | H | 2hr | hr | hr |
+| Projects Carousel | M | 2hr | hr |
+| Embed Videos | M | 3hr | hr |
+| Interactive Background Image | L | 4hr | hr | hr |
+| Bootstrap | H | 3hr | hr |
+| Make Logo | L | 4hr | hr |
+| Total | M | 18hrs| hrs |
 
 ## Additional Libraries
 
