@@ -57,16 +57,69 @@ header {
   align-items: center;
   padding: 10px;
 }
-sl-tab-group > .tab-group__tabs{
-  
-}
+
 sl-tab {
   display: none;
 }
 
-.home img{
+h2{
+  text-align: center;
+}
+img{
   max-height: 100%;
   max-width: 100%;
+}
+
+.skill_icons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 20px;
+}
+
+.projects div{
+  margin: 10px 0 10px 0;
+  overflow: hidden;
+}
+
+.projects div div{
+  margin: 0;
+  display: flex;
+  background-image: url("https://media.discordapp.net/attachments/771150639732359212/784984970326179890/IMG_20201205_212943711.jpg?width=351&height=468");
+  background-size: cover;
+  height: 350px;
+  align-items: flex-end;
+  
+
+}
+
+.projects div div p{
+  height: 20%;
+  background-color: white;
+}
+
+
+label{
+  margin: 10px 0 10px 0;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  
+}
+.submit{
+  width: fit-content;
+}
+.social_links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+textarea{
+  resize: none;
 }
 
 footer{
