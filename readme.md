@@ -79,9 +79,9 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| HTML Structure | H | 1.5hr | 1hr | 
+| HTML Structure | H | 1.5hr | 1.5hr | 
 | Hamburger | L | 1hr | 2hr |
-| Nav | H | 1.5hr | 1hr |
+| Nav | H | 1.5hr | 2hr |
 | Responsive | M | 2hr | hr |  
 | Contact Form | M | 2.5hr|  hr | 
 | Home Div| H | 3hr | hr|
