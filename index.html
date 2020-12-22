@@ -31,15 +31,124 @@
       crossorigin="anonymous"
     ></script> -->
     <!-- ***************************SHOELACE********************************** -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.23/dist/shoelace/shoelace.css">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.23/dist/shoelace/shoelace.esm.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.23/dist/shoelace/shoelace.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.23/dist/shoelace/shoelace.esm.js"></script>
+    
 
     <!-- ************************YOUR CODE**************************************** -->
     <script src="./js/components.js" defer></script>
     <script src="./js/app.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
   </head>
   <body>
-    <h1>Clayton Miller Developer</h1>
+    <header>
+      <h1>Clayton Miller Developer</h1>
+      <i class="fas fa-bars fa-2x"></i>
+    </header>
+    
+    <sl-tab-group >
+      
+      <sl-tab slot="nav" panel="home" class="nav">Home</sl-tab>
+      <sl-tab slot="nav" panel="skills" class="nav">Skills</sl-tab>
+      <sl-tab slot="nav" panel="projects" class="nav">Projects</sl-tab>
+      <sl-tab slot="nav" panel="contact" class="nav">Contact</sl-tab>
+    
+      <sl-tab-panel name="home">
+        <div class="home">
+          <img src="https://media.discordapp.net/attachments/771150639732359212/784984970326179890/IMG_20201205_212943711.jpg?width=351&height=468" alt="Italian Trulli">
+          <section>
+            <h3>About Me</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis nemo iure assumenda expedita commodi. Earum odio non dolor accusamus? Alias deleniti expedita maiores delectus voluptatibus tenetur quas aperiam in labore.</p>
+          </section>
+        </div>
+        
+      </sl-tab-panel>
+
+      <sl-tab-panel name="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <i class="fab fa-facebook-square fa-3x"></i>
+          </li>
+          <li>
+            <i class="fab fa-twitter-square fa-3x"></i>
+          </li>
+          <li>
+            <i class="fab fa-linkedin fa-3x"></i>
+          </li>
+          <li>
+            <i class="fab fa-github fa-3x"></i>
+          </li>
+          <li>
+            <i class="fab fa-facebook-square fa-3x"></i>
+          </li>
+          <li>
+            <i class="fab fa-twitter-square fa-3x"></i>
+          </li>
+          <li>
+            <i class="fab fa-linkedin fa-3x"></i>
+          </li>
+          <li>
+            <i class="fab fa-github fa-3x"></i>
+          </li>
+        </ul>
+      </sl-tab-panel>
+
+      <sl-tab-panel name="projects">
+        <div>
+          <section>
+            <h3>Project 1</h3>
+          </section>
+          <img src="pic_trulli.jpg" alt="Italian Trulli">
+          <section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis nemo iure assumenda expedita commodi. Earum odio non dolor accusamus? Alias deleniti expedita maiores delectus voluptatibus tenetur quas aperiam in labore.</p>
+          </section>
+        </div>
+        <div>
+          <section>
+            <h3>Project 1</h3>
+          </section>
+          <img src="pic_trulli.jpg" alt="Italian Trulli">
+          <section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis nemo iure assumenda expedita commodi. Earum odio non dolor accusamus? Alias deleniti expedita maiores delectus voluptatibus tenetur quas aperiam in labore.</p>
+          </section>
+          
+        </div>
+        <div>
+          <section>
+            <h3>Project 1</h3>
+          </section>
+          <img src="pic_trulli.jpg" alt="Italian Trulli">
+          <section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis nemo iure assumenda expedita commodi. Earum odio non dolor accusamus? Alias deleniti expedita maiores delectus voluptatibus tenetur quas aperiam in labore.</p>
+          </section>
+          
+        </div>
+      </sl-tab-panel>
+
+      <sl-tab-panel name="contact">
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" value="Name">
+          <label for="name">Email:</label><br>
+          <input type="text" id="email" value="Email">
+          <label for="name">Message:</label><br>
+          <input type="text" id="message" value="Message">
+          <input type="button" value="Submit">
+        </form>
+      </sl-tab-panel>
+    </sl-tab-group>
+
+    <footer>
+      <div class="social">
+        <ul>
+          <li><i class="fab fa-facebook-square fa-3x"></i></li>
+          <li><i class="fab fa-github fa-3x"></i></li>
+          <li><i class="fab fa-linkedin fa-3x"></i></li>
+          <li><i class="fab fa-twitter-square fa-3x"></i></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

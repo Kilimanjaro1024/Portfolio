@@ -19,7 +19,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* outline: 2px solid gold; */
+  outline: 2px solid gold;
 }
 
 h1,
@@ -35,6 +35,40 @@ body {
   font-family: var(--text);
 }
 
+footer {
+  background-color: green;
+}
+
 /* *******************************************
 ****** PROJECT STYLES
 ******************************************* */
+
+/* *******************************************
+****** Mobile Design
+******************************************* */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-bars{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+sl-tab-group > .tab-group__tabs{
+  
+}
+sl-tab {
+  display: none;
+}
+
+.home img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+footer{
+  display: none;
+}

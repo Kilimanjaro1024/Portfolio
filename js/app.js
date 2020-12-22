@@ -26,3 +26,34 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1DkknLv1ELt5dx7KR4AbO1W1O-aIs
 /////////////////////////
 //Pull and render data from google sheet
 ////////////////////////
+
+const $hamburger = $("i")
+const $tab = $(".nav")
+let open
+function dropDown(){
+    const $tabs = $("sl-tab")
+    
+    if(open){
+        $tabs.css("display", "none")
+        open = false
+        console.log("closed")
+    }
+    else{
+        open = true
+        $tabs.css("display", "inline")
+        
+        console.log("open")
+    }
+
+    console.log(open)
+    
+    //document.getElementByClass("nav").classList.toggle("hide")
+}
+
+$tab.on('click',(event) =>{
+    dropDown()
+})
+
+$hamburger.on('click',(event) =>{
+    dropDown()
+})
