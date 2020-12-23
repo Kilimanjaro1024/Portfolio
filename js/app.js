@@ -32,28 +32,30 @@ const $tab = $(".nav")
 let open
 function dropDown(){
     const $tabs = $("sl-tab")
-    
     if(open){
         $tabs.css("display", "none")
         open = false
-        console.log("closed")
+        //console.log("closed")
     }
     else{
         open = true
-        $tabs.css("display", "inline")
-        
-        console.log("open")
+         $tabs.css("display", "inline")    
+        //console.log("open")
     }
-
-    console.log(open)
+    //console.log(open)
+    
     
     //document.getElementByClass("nav").classList.toggle("hide")
 }
 
-$tab.on('click',(event) =>{
-    dropDown()
-})
-
-$hamburger.on('click',(event) =>{
-    dropDown()
-})
+const media = window.matchMedia("(max-width: 720px)")
+console.log(media)
+if(media.matches){
+    $tab.on('click',(event) =>{
+        dropDown()
+    })
+    
+    $hamburger.on('click',(event) =>{
+        dropDown()
+    })
+}
