@@ -5,20 +5,30 @@ console.log("hello world");
 
 $.ajax("https://spreadsheets.google.com/feeds/list/1DkknLv1ELt5dx7KR4AbO1W1O-aIsQrI53AaXJ9KUTXI/1/public/full?alt=json")
 .then((data) => {
-    console.log(data)
+    //console.log(data)
     const rawProjects = data.feed.entry
 
-    console.log(rawProjects)
+    //console.log(rawProjects)
     const projects = rawProjects.map((project) =>{
         return{
             name: project.gsx$name.$t,
             img: project.gsx$img.$t,
-            description: project.gsx$description,
+            description: project.gsx$description.$t,
             live: project.gsx$live.$t,
             github: project.gsx$github.$t
         }
     })
-    console.log(projects)
+
+    const final = projects.map((project) =>{
+        console.log(project.description)
+        return `
+            <project-card name="${project.name}" img=${project.img} description="${project.description}"></project-card>
+        `
+    })
+    
+
+    const $project = $(".projects")
+    $project.html(final.join(""))
 })
 
 
@@ -49,7 +59,7 @@ function dropDown(){
 }
 
 const media = window.matchMedia("(max-width: 720px)")
-console.log(media)
+//console.log(media)
 if(media.matches){
     $tab.on('click',(event) =>{
         dropDown()
@@ -59,3 +69,6 @@ if(media.matches){
         dropDown()
     })
 }
+
+
+
