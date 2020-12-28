@@ -6,22 +6,18 @@ class ProjectCard extends HTMLElement{
         const git = this.getAttribute("git")
         const live = this.getAttribute("live")
         const description = this.getAttribute("description")
-        const image = this.getAttribute("image")
-        //console.log(description)
+        const image = this.getAttribute("img")
+        
 
         const style =
 
         `<style>
-
-        .projects img{
-
-        }
         .projects div{
             margin: 10px 0 10px 0;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            background-image: url("https://media.discordapp.net/attachments/771150639732359212/784984970326179890/IMG_20201205_212943711.jpg?width=351&height=468");
+            background-image: url(${image});
             background-size: cover;
             height: 350px;
             align-items: flex-end;
@@ -45,7 +41,8 @@ class ProjectCard extends HTMLElement{
 
         this.innerHTML =`
             ${style}
-            <div>
+            <div style="
+            background-image: url(${image};">
                 <h2>${name}</h2>
                 <p>${description}</p>
             </div>
@@ -59,4 +56,71 @@ class ProjectCard extends HTMLElement{
 }
 
 customElements.define("project-card", ProjectCard)
+
+
+////////////////////
+//Carousel
+////////////////////
+
+class Carousel extends HTMLElement{
+    constructor(){
+        super()
+        this.cards = []
+        this.current = 0
+
+        const style =
+        `<style>
+        new-carousel{
+            
+        }
+        </style>`
+        this.innerHTML =`
+        ${this.style}
+        `
+    }
+
+    
+
+    giveCards(cards){
+        this.cards = cards
+        console.log(cards)
+        console.log(cards[0].name)
+        this.innerHTML = `
+        <project-card name="${cards[0].name}" description="${cards[0].description}" img="${cards[0].img}">
+        </project-card>
+        `
+    }
+
+    forward(){
+        if(this.current >= this.cards.length - 1){
+            this.current = 0
+            this.innerHTML = `
+            <project-card name="${this.cards[this.current].name}" description="${this.cards[this.current].description}" img="${this.cards[this.current].img}"> 
+            </project-card>`
+        }
+        else{
+            this.current += 1
+            this.innerHTML = `
+            <project-card name="${this.cards[this.current].name}" description="${this.cards[this.current].description}" img="${this.cards[this.current].img}">    
+            </project-card>`
+        }
+    }
+
+    backward(){
+        if(this.current <= 0){
+            this.current = this.cards.length - 1
+            this.innerHTML = `
+            <project-card name="${this.cards[this.current].name}" description="${this.cards[this.current].description}" img="${this.cards[this.current].img}">  
+            </project-card>`
+        }
+        else{
+            this.current -= 1
+            this.innerHTML = `
+            <project-card name="${this.cards[this.current].name}" description="${this.cards[this.current].description}" img="${this.cards[this.current].img}">
+            </project-card>`
+        }
+    }
+}
+
+customElements.define("new-carousel", Carousel)
 
