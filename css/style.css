@@ -19,7 +19,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 2px solid gold;
+  /* outline: 2px solid gold; */
 }
 
 h1,
@@ -47,12 +47,19 @@ footer {
 ****** Mobile Design
 ******************************************* */
 
+body {
+  background-image: url("https://i.pinimg.com/originals/17/a0/48/17a048b000432ed3e7551da8aad075e6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 header {
   display: flex;
   justify-content: space-between;
+  background-color: lightblue;
 }
 
-.fa-bars{
+.fa-bars {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -62,15 +69,16 @@ sl-tab {
   display: none;
 }
 
-h2{
+
+h2 {
   text-align: center;
 }
-img{
+img {
   max-height: 100%;
   max-width: 100%;
 }
 
-.skill_icons{
+.skill_icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -78,71 +86,58 @@ img{
   margin: 20px;
 }
 
-/* .projects div{
-  margin: 10px 0 10px 0;
-  overflow: hidden;
-}
-
-.projects div div{
-  margin: 0;
-  display: flex;
-  background-image: url("https://media.discordapp.net/attachments/771150639732359212/784984970326179890/IMG_20201205_212943711.jpg?width=351&height=468");
-  background-size: cover;
-  height: 350px;
-  align-items: flex-end;
-  
-
-}
-
-.projects div div p{
-  height: 20%;
-  background-color: white;
-  bac
+/* ::part(nav) {
+  width: 479px;
 } */
 
 
-label{
+
+label {
   margin: 10px 0 10px 0;
 }
 
-form{
+.home section {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+form {
   display: flex;
   flex-direction: column;
-  
 }
-.submit{
+.submit {
   width: fit-content;
 }
-.social_links{
+.social_links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   list-style-type: none;
 }
-textarea{
+textarea {
   resize: none;
 }
 
-footer{
+#foot {
   display: none;
+  background-color: lightblue;
 }
 
 @media screen and (min-width: 768px) {
-  .projects{
+  .projects {
     margin: 0 15%;
   }
-  .home{
+  .home {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
-  .home section{
+  .home section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 30%;
   }
-  .home div{
+  .home div {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -153,13 +148,20 @@ footer{
 }
 
 @media screen and (min-width: 1024px) {
-  
-  header{
+  #page-container{
+    display: grid;
+    grid-template-rows: 0.8fr 5fr 1fr;
+    position: relative;
+    min-height: 100vh;
+    
+  }
+  header {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
   }
-  i.fas{
+  i.fas {
     display: none;
   }
   sl-tab {
@@ -167,46 +169,77 @@ footer{
     justify-content: center;
   }
 
-  ::part(tabs){
+  ::part(tabs) {
     display: flex;
     justify-content: center;
   }
 
-  sl-tab-panel::part(base){
-    padding: 0 5%;
+  ::part(active-tab-indicator) {
+    display: none;
+  }
+
+  ::part(nav) {
+    width: auto;
+  }
+
+  sl-tab-panel{
+    margin-top: 3%;
+
   }
   
-  div img{
+  sl-tab-panel::part(base) {
+    padding: 0 10%;
+  }
+  
+  .home section{
+    padding: 25px;
+  }
+  .home section p{
+    padding: 25px 25px;
+  }
+
+  div img {
     display: flex;
     justify-content: space-around;
     height: 50%;
   }
-  .social_links{
+  .social_links {
     display: none;
-    
   }
-  .projects{
-    margin: 0 15%;
-  }
-  #footer{
-    position: absolute;
-    bottom: 0%;
+  .projects {
+    margin: 0 20%;
   }
 
-  footer{
+  form{
+    margin: 0 30%;
+    padding: 1% 5%;
+    background-color: darkcyan;
+  }
+  #foot {
     display: flex;
-    
     justify-content: center;
+    align-items: center;
+    bottom: 0%;
+    width: 100%;
+    
   }
 
-  .social ul{
+  .social ul {
     display: flex;
     list-style: none;
   }
 
-  .social ul li{
+  .social ul li {
     margin: 20px 20px;
   }
 
+  new-carousel{
+    max-width: 500px;
+  }
+}
 
+@media screen and (min-width: 2560px) {
+  sl-tab-panel::part(base) {
+    padding: 0 20%;
+  }
 }
