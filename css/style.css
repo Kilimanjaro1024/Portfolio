@@ -69,6 +69,29 @@ sl-tab {
   display: none;
 }
 
+.projects{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+new-carousel{
+  width: 100%;
+}
+
+.projects div{
+  border: 5px solid #16EAF7;
+  border-radius: 25px;
+}
+.projects div h2{
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid #16EAF7;
+}
+
+.projects div p{
+  border-top: 5px solid #16EAF7;
+}
 
 h2 {
   text-align: center;
@@ -85,12 +108,6 @@ img {
   list-style-type: none;
   margin: 20px;
 }
-
-/* ::part(nav) {
-  width: 479px;
-} */
-
-
 
 label {
   margin: 10px 0 10px 0;
@@ -136,14 +153,35 @@ textarea {
     flex-direction: column;
     justify-content: center;
     width: 30%;
+    border: 5px solid #16EAF7;
+    border-radius: 25px;
+    margin-left: 5px;
   }
+
+  div img {
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+    border: 5px solid #16EAF7;
+    border-radius: 100px;
+  }
+
+
   .home div {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://www.pcgamesn.com/wp-content/uploads/legacy/WoW_watermark-590x334.jpg");
+    background-image: url("https://hub.packtpub.com/wp-content/uploads/2018/05/programming.jpg");
     background-size: cover;
+    border: 5px solid #16EAF7;
+    border-radius: 25px;
+    margin-right: 5px;
+  }
+  form{
+    border: 5px solid #16EAF7;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -183,7 +221,7 @@ textarea {
   }
 
   sl-tab-panel{
-    margin-top: 3%;
+    margin: 3% 0;
 
   }
   
@@ -202,6 +240,8 @@ textarea {
     display: flex;
     justify-content: space-around;
     height: 50%;
+    border: 5px solid #16EAF7;
+    border-radius: 100px;
   }
   .social_links {
     display: none;
@@ -210,10 +250,11 @@ textarea {
     margin: 0 20%;
   }
 
+  
+
   form{
     margin: 0 30%;
     padding: 1% 5%;
-    background-color: darkcyan;
   }
   #foot {
     display: flex;
