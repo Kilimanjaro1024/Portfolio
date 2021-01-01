@@ -9,8 +9,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 4| MVP & Bug Fixes | Complete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
@@ -82,23 +82,23 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 | HTML Structure | H | 1.5hr | 1.5hr | 
 | Hamburger | L | 1hr | 2hr |
 | Nav | H | 1.5hr | 2hr |
-| Responsive | M | 2hr | hr |  
-| Contact Form | M | 2.5hr|  hr | 
-| Home Div| H | 3hr | hr|
-| Skills Div | H | 3hr |  hr | 
-| Projects Div | H | 3hr | hr | hr |
-| Social Media Icons | L | 2hr |  hr |
-| Total | H | 19.5hrs| hrs |
+| Responsive | M | 2hr | 4hr |  
+| Contact Form | M | 2.5hr|  2hr | 
+| Home Div| H | 3hr | 6hr|
+| Skills Div | H | 3hr |  4hr | 
+| Projects Div | H | 3hr | 5hr |
+| Social Media Icons | L | 2hr |  1hr |
+| Total | H | 19.5hrs| 27.5hrs |
 
 #### PostMVP
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Project Hover (expandable Blurb) | H | 2hr | hr | hr |
-| Projects Carousel | M | 2hr | hr |
+| Project Hover (expandable Blurb) | H | 2hr | hr |
+| Projects Carousel | M | 2hr | 3hr |
 | Embed Videos | M | 3hr | hr |
-| Interactive Background Image | L | 4hr | hr | hr |
-| Bootstrap | H | 3hr | hr |
+| Interactive Background Image | L | 4hr | hr |
+| Shoelace | H | 3hr | 4hr |
 | Make Logo | L | 4hr | hr |
 | Total | M | 18hrs| hrs |
 

@@ -21,15 +21,20 @@
   box-sizing: border-box;
   /* outline: 2px solid gold; */
 }
-
-h1,
+h1, h2{
+  font-family: 'Goldman', cursive;
+}
+p{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: var(--title);
-}
+} */
 
 body {
   font-family: var(--text);
@@ -89,7 +94,7 @@ new-carousel{
   border: 5px solid #16EAF7;
   border-radius: 25px;
 }
-.projects div h2{
+.projects div h3{
   display: flex;
   justify-content: center;
   border-bottom: 5px solid #16EAF7;
@@ -141,7 +146,7 @@ form {
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 1% 5%;
-  
+  margin-top: 2%;
 }
 
 div img{

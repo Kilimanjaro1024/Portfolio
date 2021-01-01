@@ -24,7 +24,7 @@ class ProjectCard extends HTMLElement{
             overflow: hidden;
         }
 
-        .projects div h2{
+        .projects div h3{
             display: flex;
             align-items: flex-start;
             width: 100%;
@@ -43,7 +43,7 @@ class ProjectCard extends HTMLElement{
             ${style}
             <div style="
             background-image: url(${image};">
-                <h2>${name}</h2>
+                <h3>${name}</h3>
                 <p>${description}</p>
             </div>
             `
