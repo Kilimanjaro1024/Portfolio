@@ -68,6 +68,9 @@ header {
 sl-tab {
   display: none;
 }
+sl-tab-panel{
+  min-height: 414px;
+}
 
 .projects{
   display: flex;
@@ -79,6 +82,9 @@ new-carousel{
   width: 100%;
 }
 
+#back{
+  background-image: url("https://www.pngrepo.com/download/90610/left-arrow-chevron.png");
+}
 .projects div{
   border: 5px solid #16EAF7;
   border-radius: 25px;
@@ -96,6 +102,7 @@ new-carousel{
 h2 {
   text-align: center;
 }
+
 img {
   max-height: 100%;
   max-width: 100%;
@@ -106,30 +113,57 @@ img {
   flex-wrap: wrap;
   justify-content: space-around;
   list-style-type: none;
-  margin: 20px;
 }
 
 label {
   margin: 10px 0 10px 0;
 }
 
+sl-tab-panel::part(base) {
+  min-height: 437px;
+}
+
 .home section {
+  padding: 5px;
   background-color: rgba(255, 255, 255, 0.5);
+  border: 5px solid #16EAF7;
+  border-radius: 25px;
+}
+
+.home section p{
+  padding: 5px;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  border: 5px solid #16EAF7;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1% 5%;
+  
 }
+
+div img{
+  border: 5px solid #16EAF7;
+  border-radius: 25px;
+}
+
+
+
 .submit {
   width: fit-content;
+  margin: 10px 0;
 }
+
 .social_links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   list-style-type: none;
+  margin-top: 20px;
 }
+
 textarea {
   resize: none;
 }
@@ -179,9 +213,12 @@ textarea {
     margin-right: 5px;
   }
   form{
-    border: 5px solid #16EAF7;
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 15%;
+    padding: 1% 5%;
+  }
+  .social_links {
+    margin-top: 40px;
+    padding: 0 10%;
   }
 }
 
@@ -249,8 +286,6 @@ textarea {
   .projects {
     margin: 0 20%;
   }
-
-  
 
   form{
     margin: 0 30%;
