@@ -81,6 +81,7 @@ sl-tab-panel{
   display: flex;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 new-carousel{
@@ -88,8 +89,25 @@ new-carousel{
 }
 
 #back{
-  background-image: url("https://www.pngrepo.com/download/90610/left-arrow-chevron.png");
+  border: none;
+  border-radius: none;
+  height: 50px;
+  width: 30px;
+  margin-right: 10px;
+  background-image: url("https://cdn3.iconfinder.com/data/icons/arrows-219/24/chevron-left-512.png");
+  background-position: center;
 }
+
+#forward{
+  border: none;
+  border-radius: none;
+  height: 50px;
+  width: 30px;
+  margin-left: 10px;
+  background-image: url("https://cdn3.iconfinder.com/data/icons/arrows-219/24/chevron-right-512.png");
+  background-position: center;
+}
+
 .projects div{
   border: 5px solid #16EAF7;
   border-radius: 25px;
@@ -278,7 +296,7 @@ textarea {
     padding: 25px 25px;
   }
 
-  div img {
+  .home div div img {
     display: flex;
     justify-content: space-around;
     height: 50%;
