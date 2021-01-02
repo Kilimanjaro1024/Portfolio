@@ -103,9 +103,7 @@ class Carousel extends HTMLElement{
         ${this.style}
         `
     }
-
     
-
     giveCards(cards){
         this.cards = cards
         console.log(cards)

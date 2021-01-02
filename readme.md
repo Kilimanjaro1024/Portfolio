@@ -108,10 +108,18 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+This code I was very proud of because I was able to search for screen size and have the functionality as well as the design act differently at different resolutions.
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+const media = window.matchMedia("(max-width: 768px)")
+
+if(media.matches){
+    $tab.on('click',(event) =>{
+        dropDown()
+    })
+    
+    $hamburger.on('click',(event) =>{
+        dropDown()
+    })
 }
 ```
 
