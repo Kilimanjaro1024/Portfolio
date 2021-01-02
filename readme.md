@@ -94,13 +94,13 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Project Hover (expandable Blurb) | H | 2hr | hr |
+| Project Hover (expandable Blurb) | H | 2hr | 3hr |
 | Projects Carousel | M | 2hr | 3hr |
 | Embed Videos | M | 3hr | hr |
 | Interactive Background Image | L | 4hr | hr |
 | Shoelace | H | 3hr | 4hr |
 | Make Logo | L | 4hr | hr |
-| Total | M | 18hrs| hrs |
+| Total | M | 18hrs| 10hrs |
 
 ## Additional Libraries
 
