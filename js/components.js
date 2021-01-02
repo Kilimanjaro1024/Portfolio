@@ -35,7 +35,8 @@ class ProjectCard extends HTMLElement{
         .projects div p{
             width: 100%;
             min-height: 20%;
-            background-color: white;
+   
+            background-color: rgb(255, 255, 255);
         }
 
         </style>`
@@ -46,14 +47,37 @@ class ProjectCard extends HTMLElement{
             background-image: url(${image};">
                 <h3>${name}</h3>
                 <p id="hoverGrow">${description}</p>
-            </div>
-            `
-        
+            </div>`
 
-        
-        
-        
+        let big = false;
+        $("#hoverGrow").css("height", "20%") 
+        document.getElementById("hoverGrow").addEventListener("click", () =>{
+            
+            if(big === false)
+            {
+                big = true
+                $("#hoverGrow").css("height", "fit-content")
+            }
+            else{
+                big = false
+                $("#hoverGrow").css("height", "20%")
+            }
+            
+        })
+
+        document.getElementById("hoverGrow").addEventListener("mouseover", () =>{
+            const media = window.matchMedia("(min-width: 1024px)")
+            if(media.matches)
+            {
+                $("#hoverGrow").css("box-shadow", " 0  0 100px 0 #fff")
+            }
+            
+        })
+        document.getElementById("hoverGrow").addEventListener("mouseout", () =>{    
+            $("#hoverGrow").css("box-shadow", "none")    
+        })
     }
+    
 }
 
 customElements.define("project-card", ProjectCard)

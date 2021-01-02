@@ -43,6 +43,7 @@
     <!-- ************************Fonts**************************************** -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Noto+Sans+JP:wght@500&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Staatliches&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="page-container">
@@ -52,6 +53,7 @@
       </header>
       
       <sl-tab-group >
+        
         
         <sl-tab slot="nav" panel="home" class="nav">Home</sl-tab>
         <sl-tab slot="nav" panel="skills" class="nav">Skills</sl-tab>
@@ -73,17 +75,23 @@
   
         <sl-tab-panel name="skills">
           <h2>Skills</h2>
-          <ul class="skill_icons">
-            <li>
-              <i class="fab fa-html5 fa-6x"></i>
-            </li>
-            <li>
-              <i class="fab fa-css3-alt fa-6x"></i>
-            </li>
-            <li>
-              <i class="fab fa-js-square fa-6x"></i>
-            </li>
-          </ul>
+          <div>
+            <ul class="skill_icons">
+              <li>
+                <i class="fab fa-html5 fa-6x"></i>
+                <p>HTML5</p>
+              </li>
+              <li>
+                <i class="fab fa-css3-alt fa-6x"></i>
+                <p>CSS</p>
+              </li>
+              <li>
+                <i class="fab fa-js-square fa-6x"></i>
+                <p>HTML5</p>
+              </li>
+            </ul>
+          </div>
+          
         </sl-tab-panel>
   
         <sl-tab-panel name="projects">
@@ -109,20 +117,6 @@
             <textarea id="message" placeholder="Message" rows="5"></textarea>
             <input type="button" value="Submit" class="submit">
           </form>
-          <ul class="social_links">
-            <li>
-              <i class="fab fa-facebook-square fa-3x"></i>
-            </li>
-            <li>
-              <i class="fab fa-github fa-3x"></i>
-            </li>
-            <li>
-              <i class="fab fa-linkedin fa-3x"></i>
-            </li>
-            <li>
-              <i class="fab fa-twitter-square fa-3x"></i>
-            </li>
-          </ul>
         </sl-tab-panel>
       </sl-tab-group>
   

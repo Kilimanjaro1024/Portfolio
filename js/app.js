@@ -80,6 +80,20 @@ document.querySelector("#forward").addEventListener("click", () =>{
     carousel.forward()
 })
 
+// $(document).ready(function(){
+//     $(document).mousemove(function(){
+//          if($("#hoverGrow:hover").length != 0){
+//             $("#hoverGrow").css("height", "fit-content")
+//         }
+//         else{
+//             $("#hoverGrow").css("height", "20%")
+//         }
+//     });
+// });
+// console.log($("#hoverGrow"))
+// this.shadowRoot.querySelector("#hoverGrow").addEventListener("click", () =>{
+//     carousel.backward()
+// })
 
 
 

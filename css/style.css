@@ -24,6 +24,9 @@
 h1, h2{
   font-family: 'Goldman', cursive;
 }
+h3{
+  font-family: 'Righteous', cursive;
+}
 p{
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -35,6 +38,10 @@ h5,
 h6 {
   font-family: var(--title);
 } */
+
+#text{
+  font-family: 'Staatliches', cursive;
+}
 
 body {
   font-family: var(--text);
@@ -62,6 +69,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: lightblue;
+  background-image: url("https://freefrontend.com/assets/img/css-background-patterns/jason-quote-bg-pattern.png");
 }
 
 .fa-bars {
@@ -72,11 +80,69 @@ header {
 
 sl-tab {
   display: none;
+  font-family: 'Staatliches', cursive;
 }
+
+sl-tab::part(base){
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+}
+
 sl-tab-panel{
   min-height: 414px;
 }
 
+/* ::part(base){
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+} */
+
+h2 {
+  text-align: center;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.skill_icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 5px solid #16EAF7;
+  border-radius: 25px;
+}
+
+label {
+  margin: 10px 0 10px 0;
+}
+
+::part(tabs) {
+  display: flex;
+  justify-content: center;
+}
+sl-tab-panel::part(base) {
+  min-height: 437px;
+}
+
+.home section {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 5px solid #16EAF7;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+.home div{
+  display: flex;
+  justify-content: center;
+}
+.home section p{
+  padding: 5px;
+  
+}
 .projects{
   display: flex;
   justify-content: center;
@@ -90,7 +156,6 @@ new-carousel{
 
 #back{
   border: none;
-  border-radius: none;
   height: 50px;
   width: 30px;
   margin-right: 10px;
@@ -100,7 +165,6 @@ new-carousel{
 
 #forward{
   border: none;
-  border-radius: none;
   height: 50px;
   width: 30px;
   margin-left: 10px;
@@ -122,39 +186,9 @@ new-carousel{
   border-top: 5px solid #16EAF7;
 }
 
-h2 {
+li{
   text-align: center;
-}
-
-img {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.skill_icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-label {
-  margin: 10px 0 10px 0;
-}
-
-sl-tab-panel::part(base) {
-  min-height: 437px;
-}
-
-.home section {
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 5px solid #16EAF7;
-  border-radius: 25px;
-}
-
-.home section p{
-  padding: 5px;
+  margin: 15px;
 }
 
 form {
@@ -172,28 +206,31 @@ div img{
   border-radius: 25px;
 }
 
-
-
 .submit {
   width: fit-content;
   margin: 10px 0;
 }
 
-.social_links {
+.social ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style-type: none;
-  margin-top: 20px;
+  list-style: none;
 }
 
+.social ul li {
+  margin: 20px 20px;
+}
 textarea {
   resize: none;
 }
 
 #foot {
-  display: none;
-  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0%;
+  width: 100%;
+  background-image: url("https://freefrontend.com/assets/img/css-background-patterns/jason-quote-bg-pattern.png");
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -213,6 +250,7 @@ textarea {
     border: 5px solid #16EAF7;
     border-radius: 25px;
     margin-left: 5px;
+    margin-top: 0;
   }
 
   div img {
@@ -248,7 +286,7 @@ textarea {
 @media screen and (min-width: 1024px) {
   #page-container{
     display: grid;
-    grid-template-rows: 0.8fr 5fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
     position: relative;
     min-height: 100vh;
     
@@ -314,23 +352,9 @@ textarea {
     margin: 0 30%;
     padding: 1% 5%;
   }
-  #foot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0%;
-    width: 100%;
-    
-  }
+  
 
-  .social ul {
-    display: flex;
-    list-style: none;
-  }
-
-  .social ul li {
-    margin: 20px 20px;
-  }
+  
 
   new-carousel{
     max-width: 500px;
