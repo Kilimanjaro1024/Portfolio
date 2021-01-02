@@ -8,6 +8,7 @@ class ProjectCard extends HTMLElement{
         const description = this.getAttribute("description")
         const image = this.getAttribute("img")
         
+        // const shadow = this.attachShadow({mode: "open"})
 
         const style =
 
@@ -33,7 +34,7 @@ class ProjectCard extends HTMLElement{
 
         .projects div p{
             width: 100%;
-            height: 20%;
+            min-height: 20%;
             background-color: white;
         }
 
@@ -44,10 +45,10 @@ class ProjectCard extends HTMLElement{
             <div style="
             background-image: url(${image};">
                 <h3>${name}</h3>
-                <p>${description}</p>
+                <p id="hoverGrow">${description}</p>
             </div>
             `
-        //const shadow = this.attachShadow({mode: "open"})
+        
 
         
         
@@ -92,6 +93,7 @@ class Carousel extends HTMLElement{
     }
 
     forward(){
+        console.log("forward")
         if(this.current >= this.cards.length - 1){
             this.current = 0
             this.innerHTML = `
@@ -107,6 +109,7 @@ class Carousel extends HTMLElement{
     }
 
     backward(){
+        console.log("back")
         if(this.current <= 0){
             this.current = this.cards.length - 1
             this.innerHTML = `
@@ -120,6 +123,7 @@ class Carousel extends HTMLElement{
             </project-card>`
         }
     }
+
 }
 
 customElements.define("new-carousel", Carousel)
