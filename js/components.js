@@ -6,14 +6,8 @@ class ProjectCard extends HTMLElement{
         const description = this.getAttribute("description")
         const image = this.getAttribute("img")
         const live = this.getAttribute("live")
-        const git = this.getAttribute("github")
+        const git = this.getAttribute("git")
         
-        
-        console.log(live)
-        console.log(git)
-        console.log(description)
-        console.log(name)
-        console.log(image)
         // const shadow = this.attachShadow({mode: "open"})
 
         const style =
@@ -115,7 +109,7 @@ class Carousel extends HTMLElement{
         console.log(cards)
         console.log(cards[0].name)
         this.innerHTML = `
-        <project-card name="${cards[0].name}" description="${cards[0].description}" img="${cards[0].img}">
+        <project-card name="${cards[0].name}" description="${cards[0].description}" img="${cards[0].img}" live="${cards[0].live}" git="${cards[0].git}">
         </project-card>
         `
     }
@@ -125,13 +119,13 @@ class Carousel extends HTMLElement{
         if(this.current >= this.cards.length - 1){
             this.current = 0
             this.innerHTML = `
-            <project-card name="${this.cards[this.current].name}" description="${this.cards[this.current].description}" img="${this.cards[this.current].img}"> 
+            <project-card name="${this.cards[this.current].name}" description="${this.cards[this.current].description}" img="${this.cards[this.current].img}" live="${this.cards[this.current].live}" git="${this.cards[this.current].git}"> 
             </project-card>`
         }
         else{
             this.current += 1
             this.innerHTML = `
-            <project-card name="${this.cards[this.current].name}" description="${this.cards[this.current].description}" img="${this.cards[this.current].img}">    
+            <project-card name="${this.cards[this.current].name}" description="${this.cards[this.current].description}" img="${this.cards[this.current].img}" live="${this.cards[this.current].live}" git="${this.cards[this.current].git}"> 
             </project-card>`
         }
     }
@@ -141,13 +135,13 @@ class Carousel extends HTMLElement{
         if(this.current <= 0){
             this.current = this.cards.length - 1
             this.innerHTML = `
-            <project-card name="${this.cards[this.current].name}" description="${this.cards[this.current].description}" img="${this.cards[this.current].img}">  
+            <project-card name="${this.cards[this.current].name}" description="${this.cards[this.current].description}" img="${this.cards[this.current].img}" live="${this.cards[this.current].live}" git="${this.cards[this.current].git}"> 
             </project-card>`
         }
         else{
             this.current -= 1
             this.innerHTML = `
-            <project-card name="${this.cards[this.current].name}" description="${this.cards[this.current].description}" img="${this.cards[this.current].img}">
+            <project-card name="${this.cards[this.current].name}" description="${this.cards[this.current].description}" img="${this.cards[this.current].img}" live="${this.cards[this.current].live}" git="${this.cards[this.current].git}"> 
             </project-card>`
         }
     }

@@ -15,7 +15,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1DkknLv1ELt5dx7KR4AbO1W1O-aIs
             img: project.gsx$img.$t,
             description: project.gsx$description.$t,
             live: project.gsx$live.$t,
-            github: project.gsx$github.$t
+            git: project.gsx$github.$t
         }
     })
 
