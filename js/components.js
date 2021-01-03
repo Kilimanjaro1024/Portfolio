@@ -3,11 +3,17 @@ class ProjectCard extends HTMLElement{
         super()
 
         const name = this.getAttribute("name")
-        const git = this.getAttribute("git")
-        const live = this.getAttribute("live")
         const description = this.getAttribute("description")
         const image = this.getAttribute("img")
+        const live = this.getAttribute("live")
+        const git = this.getAttribute("github")
         
+        
+        console.log(live)
+        console.log(git)
+        console.log(description)
+        console.log(name)
+        console.log(image)
         // const shadow = this.attachShadow({mode: "open"})
 
         const style =
@@ -43,14 +49,12 @@ class ProjectCard extends HTMLElement{
 
         this.innerHTML =`
             ${style}
-            <div style="
-            background-image: url(${image};">
-                <h3><a href="${live}">${name}</a></h3>
+            <div style="background-image: url(${image};">
+                <h3><a href=${live}>${name}</a></h3>
                 <p id="hoverGrow">${description}</p>
             </div>`
 
         let big = false;
-        $
         $("#hoverGrow").css("height", "40px") 
         document.getElementById("hoverGrow").addEventListener("click", () =>{
             
@@ -65,7 +69,7 @@ class ProjectCard extends HTMLElement{
             }
             
         })
-
+        
         document.getElementById("hoverGrow").addEventListener("mouseover", () =>{
             const media = window.matchMedia("(min-width: 1024px)")
             if(media.matches)
@@ -77,6 +81,7 @@ class ProjectCard extends HTMLElement{
         document.getElementById("hoverGrow").addEventListener("mouseout", () =>{    
             $("#hoverGrow").css("box-shadow", "none")    
         })
+        
     }
     
 }

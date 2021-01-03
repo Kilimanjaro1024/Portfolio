@@ -19,7 +19,6 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1DkknLv1ELt5dx7KR4AbO1W1O-aIs
         }
     })
 
-    //console.log(projects)
     const carousel = document.querySelector("new-carousel")
 
     carousel.giveCards(projects)
