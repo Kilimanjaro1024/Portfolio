@@ -279,6 +279,9 @@ textarea {
     margin: 0 15%;
     padding: 1% 5%;
   }
+  .skill_icons{
+    margin: 0 20%;
+  }
   .social_links {
     margin-top: 40px;
     padding: 0 10%;
