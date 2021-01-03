@@ -160,6 +160,7 @@ new-carousel{
   width: 30px;
   margin-right: 10px;
   background-image: url("https://cdn3.iconfinder.com/data/icons/arrows-219/24/chevron-left-512.png");
+  background-size: cover;
   background-position: center;
 }
 
@@ -169,7 +170,9 @@ new-carousel{
   width: 30px;
   margin-left: 10px;
   background-image: url("https://cdn3.iconfinder.com/data/icons/arrows-219/24/chevron-right-512.png");
+  background-size: cover;
   background-position: center;
+  
 }
 
 .projects div{

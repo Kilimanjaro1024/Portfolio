@@ -21,7 +21,7 @@ class ProjectCard extends HTMLElement{
             justify-content: space-between;
             background-image: url(${image});
             background-size: cover;
-            background-position: center;
+            background-position: center;    
             height: 350px;
             align-items: flex-end;
             overflow: hidden;
@@ -45,7 +45,6 @@ class ProjectCard extends HTMLElement{
    
             background-color: rgb(255, 255, 255);
         }
-
         </style>`
 
         this.innerHTML =`
