@@ -1,4 +1,3 @@
-console.log("hello world");
 /////////////////////////
 //Pull and render data from google sheet
 ////////////////////////
@@ -26,9 +25,9 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1DkknLv1ELt5dx7KR4AbO1W1O-aIs
 
 
 
-/////////////////////////
-//Pull and render data from google sheet
-////////////////////////
+////////////////////////////////////////
+//Functionality for Hamburger Drop Down
+////////////////////////////////////////
 
 const $hamburger = $(".fas.fa-bars")
 const $tab = $(".nav")
@@ -59,9 +58,12 @@ if(media.matches){
     })
 }
 
+/////////////////////////////////////
+//Functionality for carousel buttons
+/////////////////////////////////////
+
 const carousel = document.querySelector("new-carousel")
 
-// carousel.giveImages(images)
 document.querySelector("#back").addEventListener("click", () =>{
     carousel.backward()
 })

@@ -11,7 +11,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 4| MVP & Bug Fixes | Complete
-|Day 5| Final Touches | Incomplete
+|Day 5| Final Touches | Complete
 |Day 6| Present | Incomplete
 
 ## Project Description
@@ -126,4 +126,10 @@ if(media.matches){
 
 ## Issues and Resolutions
 
- Issue: Project Card API calls not being accessed by the
+- Issue: Project Card API calls not being accessed by the Carousel.
+    - Resolution: Whithin the carousel component I was not properly passing the data for api calls from component to component.
+- Issue: Menu bar vanishing when sizing of the widow changed on desktop.
+    - Resolution: I ended up using the media match function in Javascript to check the size of the window similar to a media query in CSS
+- Issue: Positioning and alignment of shoelace tab elements.
+    - Resolution: As a result of using a shoelace tabs group for my project I had to thoroughly investigate how to access and manipulate the elements within the component. In some cases I had to refactor my HTML to allow for better specification of elements.
+  

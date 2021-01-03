@@ -1,3 +1,6 @@
+////////////////////
+//Project Cards
+////////////////////
 class ProjectCard extends HTMLElement{
     constructor(){
         super()
