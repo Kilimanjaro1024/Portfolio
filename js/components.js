@@ -34,7 +34,7 @@ class ProjectCard extends HTMLElement{
 
         .projects div p{
             width: 100%;
-            min-height: 20%;
+            min-height: 40px;
    
             background-color: rgb(255, 255, 255);
         }
@@ -45,12 +45,13 @@ class ProjectCard extends HTMLElement{
             ${style}
             <div style="
             background-image: url(${image};">
-                <h3>${name}</h3>
+                <h3><a href=${live}>${name}</a></h3>
                 <p id="hoverGrow">${description}</p>
             </div>`
 
         let big = false;
-        $("#hoverGrow").css("height", "20%") 
+        $
+        $("#hoverGrow").css("height", "40px") 
         document.getElementById("hoverGrow").addEventListener("click", () =>{
             
             if(big === false)
@@ -60,7 +61,7 @@ class ProjectCard extends HTMLElement{
             }
             else{
                 big = false
-                $("#hoverGrow").css("height", "20%")
+                $("#hoverGrow").css("height", "40px")
             }
             
         })
