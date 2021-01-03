@@ -8,7 +8,6 @@ class ProjectCard extends HTMLElement{
         const live = this.getAttribute("live")
         const git = this.getAttribute("git")
 
-        console.log(git)
         
         // const shadow = this.attachShadow({mode: "open"})
 
