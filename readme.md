@@ -87,24 +87,25 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 | Home Div| H | 3hr | 6hr|
 | Skills Div | H | 3hr |  4hr | 
 | Projects Div | H | 3hr | 5hr |
-| Social Media Icons | L | 2hr |  1hr |
-| Total | H | 19.5hrs| 27.5hrs |
+| Social Media Icons | L | 2hr |  2hr |
+| Total | H | 19.5hrs| 29.5hrs |
 
 #### PostMVP
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Project Hover (expandable Blurb) | H | 2hr | 3hr |
-| Projects Carousel | M | 2hr | 3hr |
-| Embed Videos | M | 3hr | hr |
-| Interactive Background Image | L | 4hr | hr |
-| Shoelace | H | 3hr | 4hr |
-| Make Logo | L | 4hr | hr |
-| Total | M | 18hrs| 10hrs |
+| Project Hover (expandable Blurb) | H | 2hr | 4hr |
+| Projects Carousel | M | 2hr | 4hr |
+| Embed Videos | M | 3hr | DnD |
+| Interactive Background Image | L | 4hr | DnD |
+| Shoelace | H | 3hr | 5hr |
+| Make Logo | L | 4hr | DnD |
+| Total | M | 18hrs| 13hrs |
 
 ## Additional Libraries
 
- Use this section to list all supporting libraries and thier role in the project. 
+ - JQuery
+ - Shoelace
 
 ## Code Snippet
 
@@ -125,4 +126,4 @@ if(media.matches){
 
 ## Issues and Resolutions
 
- Use this section to list of all major issues encountered and their resolution.
+ Issue: Project Card API calls not being accessed by the

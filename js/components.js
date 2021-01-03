@@ -42,7 +42,6 @@ class ProjectCard extends HTMLElement{
         .projects div p{
             width: 100%;
             min-height: 40px;
-   
             background-color: rgb(255, 255, 255);
         }
         </style>`
@@ -74,7 +73,7 @@ class ProjectCard extends HTMLElement{
             const media = window.matchMedia("(min-width: 1024px)")
             if(media.matches)
             {
-                $("#hoverGrow").css("box-shadow", " 0  0 100px 0 #fff")
+                $("#hoverGrow").css("box-shadow", " 0  0 100px 0 #16EAF7")
             }
             
         })
