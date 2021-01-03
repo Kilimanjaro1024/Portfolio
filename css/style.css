@@ -66,6 +66,11 @@ body {
   background-position: center;
   min-height: 100vh;
 }
+
+#page-container{
+  position: relative;
+  min-height: 100vh;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -90,14 +95,8 @@ sl-tab::part(base){
 }
 
 sl-tab-panel{
-  min-height: 414px;
+  margin-bottom: 80px;
 }
-
-/* ::part(base){
-  font-family: 'Staatliches', cursive;
-  font-size: 20px;
-} */
-
 h2 {
   text-align: center;
 }
@@ -234,6 +233,7 @@ textarea {
   justify-content: center;
   align-items: center;
   position: absolute;
+  margin-top: 10px;
   bottom: 0%;
   width: 100%;
   background-image: url("https://freefrontend.com/assets/img/css-background-patterns/jason-quote-bg-pattern.png");
