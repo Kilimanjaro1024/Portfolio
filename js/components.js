@@ -45,7 +45,7 @@ class ProjectCard extends HTMLElement{
             ${style}
             <div style="
             background-image: url(${image};">
-                <h3><a href=${live}>${name}</a></h3>
+                <h3><a href="${live}">${name}</a></h3>
                 <p id="hoverGrow">${description}</p>
             </div>`
 
