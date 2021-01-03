@@ -190,7 +190,9 @@ li{
   text-align: center;
   margin: 15px;
 }
-
+i{
+  color: black;
+}
 form {
   display: flex;
   flex-direction: column;

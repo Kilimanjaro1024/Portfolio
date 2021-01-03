@@ -32,6 +32,11 @@ class ProjectCard extends HTMLElement{
             align-items: flex-start;
             width: 100%;
             background-color: white;
+            color: black;
+        }
+        .projects div h3 a{
+            text-decoration: none;
+            color: black;
         }
 
         .projects div p{
