@@ -12,7 +12,6 @@
       crossorigin="anonymous"
     ></script>
 
-    
     <!-- *****************************BOOTSTRAP 5********************************** -->
     <!-- ************BOOTSTRAP 5 DOCS -> https://v5.getbootstrap.com/************** -->
     <!-- <link
@@ -32,19 +31,34 @@
       crossorigin="anonymous"
     ></script> -->
     <!-- ***************************SHOELACE********************************** -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.23/dist/shoelace/shoelace.css">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.23/dist/shoelace/shoelace.esm.js"></script>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.23/dist/shoelace/shoelace.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.23/dist/shoelace/shoelace.esm.js"
+    ></script>
 
     <!-- ************************YOUR CODE**************************************** -->
     <script src="./js/components.js" defer></script>
     <script src="./js/app.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+    <link rel="stylesheet" href="path/to/font-mfizz.css">
     <!-- ************************Fonts**************************************** -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Noto+Sans+JP:wght@500&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&family=Noto+Sans+JP:wght@500&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="page-container">
@@ -52,28 +66,34 @@
         <h1>Clayton Miller Developer</h1>
         <i class="fas fa-bars fa-2x"></i>
       </header>
-      
-      <sl-tab-group >
-        
-        
+
+      <sl-tab-group>
         <sl-tab slot="nav" panel="home" class="nav">Home</sl-tab>
         <sl-tab slot="nav" panel="skills" class="nav">Skills</sl-tab>
         <sl-tab slot="nav" panel="projects" class="nav">Projects</sl-tab>
         <sl-tab slot="nav" panel="contact" class="nav">Contact</sl-tab>
-      
+
         <sl-tab-panel name="home">
           <div class="home">
             <div>
-              <img src="https://media.discordapp.net/attachments/771150639732359212/784984970326179890/IMG_20201205_212943711.jpg?width=351&height=468" alt="Italian Trulli">
+              <img
+                src="https://media.discordapp.net/attachments/286649548997132289/821127100870295602/20210315_160438.jpg?width=502&height=670"
+                alt="Italian Trulli"
+              />
             </div>
             <section>
               <h3>About Me</h3>
-              <p>Hi there, welcome to my portfolio site my name is Clayton. I am a Game Designer turned Software Developer currently working through a front-end and back-end course with GA. I have a plethera of experience with several programming languages and development engines.</p>
+              <p>
+                Hi there, welcome to my portfolio site my name is Clayton. I am
+                a Game Designer turned Software Developer currently working
+                through a front-end and back-end course with GA. I have a
+                plethera of experience with several programming languages and
+                development engines.
+              </p>
             </section>
           </div>
-          
         </sl-tab-panel>
-  
+
         <sl-tab-panel name="skills">
           <h2>Skills</h2>
           <div>
@@ -94,26 +114,44 @@
                 <i class="fab fa-js-square fa-6x"></i>
                 <p>Javascript</p>
               </li>
+              <li>
+                <i class="icon-ruby-on-rails-alt"></i> icon-ruby-on-rails-alt
+
+                <p>Ruby on Rails</p>
+              </li>
             </ul>
           </div>
-          
         </sl-tab-panel>
-  
+
         <sl-tab-panel name="projects">
           <h2>My Work!</h2>
-          
-          <div class="projects">           
+
+          <div class="projects">
             <div id="back"></div>
             <new-carousel></new-carousel>
             <div id="forward"></div>
           </div>
-          
-          
         </sl-tab-panel>
-  
+
         <sl-tab-panel name="contact">
-          <h2>Contact Me!</h2>
-          <form>
+          <h2 class="contact-title">Contact Me!</h2>
+          <div class="contact-me">
+            <a
+              href="https://drive.google.com/file/d/1ISGpCSwEWS2CNShhuNmXL4jE28l2cEp1/view?usp=sharing"
+              target="blank"
+              >Resume</a
+            >
+            <a
+              href="https://www.linkedin.com/in/clayton-miller-software-engineer/"
+              target="blank"
+              >Linkedin</a
+            >
+            <a href="https://github.com/Kilimanjaro1024" target="blank"
+              >Github</a
+            >
+            <p>Email: clayton.miller@loop.colum.edu</p>
+          </div>
+          <!-- <form>
             <label for="name">Name:</label>
             <input type="text" id="name" placeholder="Name">
             <label for="name">Email:</label>
@@ -121,11 +159,11 @@
             <label for="name">Message:</label>
             <textarea id="message" placeholder="Message" rows="5"></textarea>
             <input type="button" value="Submit" class="submit">
-          </form>
+          </form> -->
         </sl-tab-panel>
       </sl-tab-group>
-  
-      <div id="foot">
+
+      <!-- <div id="foot">
         <div class="social">
           <ul>
             <li>
@@ -140,9 +178,7 @@
             </li>
           </ul>
         </div>
-      </div>
-      
+      </div> -->
     </div>
-    
   </body>
 </html>

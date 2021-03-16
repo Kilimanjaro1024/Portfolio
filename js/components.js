@@ -46,6 +46,7 @@ class ProjectCard extends HTMLElement{
             width: 100%;
             min-height: 40px;
             background-color: rgb(255, 255, 255);
+
         }
         </style>`
 
